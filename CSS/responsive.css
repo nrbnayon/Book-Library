@@ -1,0 +1,15 @@
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+  .navbar .container {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+}

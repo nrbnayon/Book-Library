@@ -3,8 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>Book Library</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="header-container">
+          <a href="index.html" class="nav-logo">Book Library</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/wishlist.html">Wishlist</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Search and Filters -->
+      <div class="filters">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for books by title..."
+        />
+        <select id="genre-filter">
+          <option value="">All Genres</option>
+          <!-- Populate genres dynamically -->
+        </select>
+      </div>
+
+      <!-- Book List -->
+      <div id="book-container" class="book-list">
+        <!-- Book cards will be injected here dynamically -->
+      </div>
+
+      <!-- Pagination Controls -->
+      <div class="pagination" id="pagination-controls">
+        <!-- Pagination buttons will be created dynamically -->
+      </div>
+    </main>
+
+    <!-- <main>
+      <h1>Book Library</h1>
+      <div class="search-filter">
+        <input type="text" id="search" placeholder="Search by title" />
+        <select id="genre-filter">
+          <option value="">All Genres</option>
+        </select>
+      </div>
+      <div id="book-list"></div>
+      <div id="pagination"></div>
+    </main> -->
+
+    <script src="js/app.js" type="module"></script>
+  </body>
 </html>
