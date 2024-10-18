@@ -23,8 +23,9 @@ async function displayBookDetails() {
   const bookId = urlParams.get("id");
 
   if (!bookId) {
-    document.getElementById("book-details").innerHTML =
-      "<p>No book selected.</p>";
+    document.getElementById(
+      "book-details"
+    ).innerHTML = `<p>No book selected.</p>`;
     return;
   }
 

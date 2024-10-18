@@ -1,7 +1,6 @@
 const API_URL = "https://gutendex.com/books";
 
-export const fetchBooks = async (bookId = null, page = 1) => {
-  console.log("bookId", bookId);
+const fetchBooks = async (bookId = null, page = 1) => {
   try {
     let url = `${API_URL}?page=${page}`;
     if (bookId) {
@@ -22,3 +21,5 @@ export const fetchBooks = async (bookId = null, page = 1) => {
     throw error;
   }
 };
+
+export default fetchBooks;
