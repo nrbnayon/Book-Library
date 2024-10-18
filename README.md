@@ -12,7 +12,7 @@ Book Library is a web application that allows users to browse, search, and filte
 - **Pagination**: Paginate through the list of books using "Next" and "Previous" buttons or page numbers.
 - **Book Details Page**: Displays detailed information about a selected book.
 - **Responsive Design**: Fully responsive layout for both desktop and mobile devices.
-- **Optional Bonus**:
+- **Others**:
   - Smooth animations for showing or hiding books.
   - Persistent search and filter preferences using localStorage.
 
