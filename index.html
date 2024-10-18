@@ -5,60 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <title>Book Library</title>
   </head>
   <body>
     <!-- Navbar -->
     <header>
       <nav class="navbar">
-        <div class="header-container">
-          <a href="index.html" class="nav-logo">Book Library</a>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/wishlist.html">Wishlist</a></li>
+        <div class="nav-logo">
+          <a href="index.html">Book Library</a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="pages/wishlist.html" class="nav-link">
+                <i class="fas fa-heart"></i> Wishlist
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="container">
-      <!-- Search and Filters -->
+    <main class="main-content container">
       <div class="filters">
         <input
           type="text"
           id="search-bar"
+          class="search-bar"
           placeholder="Search for books by title..."
         />
-        <select id="genre-filter">
+        <select id="genre-filter" class="genre-filter">
           <option value="">All Genres</option>
-          <!-- Populate genres dynamically -->
         </select>
       </div>
 
-      <!-- Book List -->
-      <div id="book-container" class="book-list">
-        <!-- Book cards will be injected here dynamically -->
-      </div>
+      <div id="book-container" class="book-list"></div>
 
-      <!-- Pagination Controls -->
-      <div class="pagination" id="pagination-controls">
-        <!-- Pagination buttons will be created dynamically -->
-      </div>
+      <div class="pagination" id="pagination-controls"></div>
     </main>
 
-    <!-- <main>
-      <h1>Book Library</h1>
-      <div class="search-filter">
-        <input type="text" id="search" placeholder="Search by title" />
-        <select id="genre-filter">
-          <option value="">All Genres</option>
-        </select>
-      </div>
-      <div id="book-list"></div>
-      <div id="pagination"></div>
-    </main> -->
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2024 Book Library. All rights reserved.</p>
+    </footer>
 
-    <script src="js/app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/wishlist.js"></script>
+    <script src="./js/book-details.js"></script>
   </body>
 </html>
