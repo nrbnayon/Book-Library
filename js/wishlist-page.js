@@ -17,7 +17,6 @@ function displayWishlist() {
     </div>
   `;
 
-  // Add event listeners to wishlist buttons
   const wishlistBtns = wishlistContainer.querySelectorAll(".wishlist-btn");
   wishlistBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {

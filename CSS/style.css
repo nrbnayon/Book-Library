@@ -153,6 +153,8 @@ header:hover {
 }
 
 .book-cover img {
+  border-radius: 8px;
+  padding: 0.5rem;
   width: 100%;
   height: 250px;
   border-radius: 12px 12px 0 0;
@@ -207,38 +209,6 @@ header:hover {
 
 .view-details-btn:hover {
   background-color: #1a5fc3;
-}
-
-.book-detail-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.book-detail-card img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.book-detail-info {
-  text-align: center;
-}
-
-.book-detail-info h2 {
-  color: #2575fc;
-  margin-bottom: 10px;
-}
-
-.book-detail-info p {
-  margin: 8px 0;
 }
 
 .wishlist-container {
@@ -321,7 +291,6 @@ header:hover {
 .page-title {
   font-size: 2rem;
   color: #2575fc;
-  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -329,25 +298,39 @@ header:hover {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
-  background-color: #fff;
+}
+
+.book-detail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 780px;
+  margin: 0 auto;
 }
 
-.book-details-container img {
-  max-width: 100%;
-  height: auto;
+.book-detail-card img {
+  width: 100%;
+  /* max-width: 500px; */
+  max-height: 350px;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-.book-details-container h2 {
+.book-detail-info {
+  text-align: center;
+}
+
+.book-detail-info h2 {
   color: #2575fc;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
-.book-details-container p {
-  margin-bottom: 0.5rem;
+.book-detail-info p {
+  margin: 8px 0;
 }
 
 .book-details-container button {
@@ -424,6 +407,11 @@ footer {
   text-align: center;
   padding: 1.2rem 0;
   margin-top: 2rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 footer p {

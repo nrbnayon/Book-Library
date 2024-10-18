@@ -52,16 +52,17 @@ async function displayBookDetails() {
       <div class="book-detail-card">
         <img src="${coverImage}" alt="${book.title} cover">
         <div class="book-detail-info">
-          <h2>${book.title}</h2>
+          <h2>📖 ${book.title}</h2>
           <p><strong>📚 Author(s):</strong> ${authors}</p>
           <p><strong>📖 Genre(s):</strong> ${genres}</p>
-          <p><strong>🆔 ID:</strong> ${book.id}</p>
-          <p><strong>⬇️ Download count:</strong> ${book.download_count}</p>
+          <p><strong>📜 Subjects:</strong> ${book.subjects}</p>
+          <p><strong>🆔:</strong> ${book.id}</p>
           <p><strong>🌐 Languages:</strong> ${book.languages.join(", ")}</p>
+          <p><strong>⬇️ Download count:</strong> ${book.download_count}</p>
           <button id="wishlist-btn" class="wishlist-btn view-details-btn">
             ${
               isInWishlist(book.id)
-                ? "❤️ Remove from Wishlist"
+                ? "❤️ Remove Wishlist"
                 : "🤍 Add to Wishlist"
             }
           </button>
@@ -73,7 +74,7 @@ async function displayBookDetails() {
     wishlistBtn.addEventListener("click", () => {
       toggleWishlist(book);
       wishlistBtn.textContent = isInWishlist(book.id)
-        ? "❤️ Remove from Wishlist"
+        ? "❤️ Remove Wishlist"
         : "🤍 Add to Wishlist";
     });
   } catch (error) {

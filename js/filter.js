@@ -1,5 +1,4 @@
 export function setupFilter(filterSelect, books, displayCallback) {
-  // Populate genre options
   const genres = new Set();
   books.forEach((book) => {
     book.bookshelves.forEach((genre) => genres.add(genre));
@@ -12,7 +11,6 @@ export function setupFilter(filterSelect, books, displayCallback) {
     filterSelect.appendChild(option);
   });
 
-  // Add event listener
   filterSelect.addEventListener("change", () => {
     const selectedGenre = filterSelect.value;
     const filteredBooks = selectedGenre

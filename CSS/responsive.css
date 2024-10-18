@@ -38,7 +38,14 @@
   }
 
   .book-details-container {
+    padding: 0;
     width: 100%;
+    max-width: 100%;
+  }
+  .book-detail-card .book-detail-info {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 100%;
   }
   .book-actions {
     flex-direction: column;

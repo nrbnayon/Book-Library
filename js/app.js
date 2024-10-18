@@ -21,7 +21,6 @@ const hideLoadingIndicator = () => {
   }
 };
 
-// Main Initialization Function
 const init = async () => {
   const bookContainer = document.getElementById("book-container");
   const paginationControls = document.getElementById("pagination-controls");

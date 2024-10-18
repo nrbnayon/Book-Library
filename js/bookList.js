@@ -22,8 +22,8 @@ const createBookCard = (book) => {
         <img src="${coverImage}" alt="${book.title} cover" loading="lazy">
     </div>
     <div class="book-details">
-        <h3>📖 ${book.title}</h3>
-        <p>👤 Author: ${authors}</p>
+        <h3>📖 ${book.title} </h3>
+        <p>👤 Author: ${authors} <strong>🆔:</strong> ${book.id}</p>
         <p>📚 Genre: ${genres}</p>
         <div class="book-actions">
             <button class="view-details-btn" data-id="${
